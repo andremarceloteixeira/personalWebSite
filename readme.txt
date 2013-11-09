@@ -31,3 +31,7 @@ Virtual Hosts:
 
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+$mysql_host = "mysql13.000webhost.com";
+$mysql_database = "a9731655_mt";
+$mysql_user = "a9731655_mt";
+$mysql_password = "a9731655_mt";
