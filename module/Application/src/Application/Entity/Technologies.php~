@@ -1,0 +1,248 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Technologies
+ *
+ * @ORM\Table(name="technologies", indexes={@ORM\Index(name="fk_technologies_projects1", columns={"id_project"})})
+ * @ORM\Entity
+ */
+class Technologies
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_technologies", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idTechnologies;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=45, nullable=false)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="technologiescol", type="string", length=45, nullable=false)
+     */
+    private $technologiescol;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="site_url", type="string", length=45, nullable=false)
+     */
+    private $siteUrl;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=45, nullable=false)
+     */
+    private $description;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="level", type="integer", nullable=false)
+     */
+    private $level;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="years", type="string", length=30, nullable=false)
+     */
+    private $years;
+
+    /**
+     * @var \Application\Entity\Projects
+     *
+     * @ORM\ManyToOne(targetEntity="Application\Entity\Projects")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_project", referencedColumnName="idprojects")
+     * })
+     */
+    private $idProject;
+
+
+
+    /**
+     * Get idTechnologies
+     *
+     * @return integer 
+     */
+    public function getIdTechnologies()
+    {
+        return $this->idTechnologies;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Technologies
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set technologiescol
+     *
+     * @param string $technologiescol
+     * @return Technologies
+     */
+    public function setTechnologiescol($technologiescol)
+    {
+        $this->technologiescol = $technologiescol;
+
+        return $this;
+    }
+
+    /**
+     * Get technologiescol
+     *
+     * @return string 
+     */
+    public function getTechnologiescol()
+    {
+        return $this->technologiescol;
+    }
+
+    /**
+     * Set siteUrl
+     *
+     * @param string $siteUrl
+     * @return Technologies
+     */
+    public function setSiteUrl($siteUrl)
+    {
+        $this->siteUrl = $siteUrl;
+
+        return $this;
+    }
+
+    /**
+     * Get siteUrl
+     *
+     * @return string 
+     */
+    public function getSiteUrl()
+    {
+        return $this->siteUrl;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Technologies
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set level
+     *
+     * @param integer $level
+     * @return Technologies
+     */
+    public function setLevel($level)
+    {
+        $this->level = $level;
+
+        return $this;
+    }
+
+    /**
+     * Get level
+     *
+     * @return integer 
+     */
+    public function getLevel()
+    {
+        return $this->level;
+    }
+
+    /**
+     * Set years
+     *
+     * @param string $years
+     * @return Technologies
+     */
+    public function setYears($years)
+    {
+        $this->years = $years;
+
+        return $this;
+    }
+
+    /**
+     * Get years
+     *
+     * @return string 
+     */
+    public function getYears()
+    {
+        return $this->years;
+    }
+
+    /**
+     * Set idProject
+     *
+     * @param \Application\Entity\Projects $idProject
+     * @return Technologies
+     */
+    public function setIdProject(\Application\Entity\Projects $idProject = null)
+    {
+        $this->idProject = $idProject;
+
+        return $this;
+    }
+
+    /**
+     * Get idProject
+     *
+     * @return \Application\Entity\Projects 
+     */
+    public function getIdProject()
+    {
+        return $this->idProject;
+    }
+}

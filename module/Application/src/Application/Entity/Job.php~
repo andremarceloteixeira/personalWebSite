@@ -1,0 +1,158 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Job
+ *
+ * @ORM\Table(name="job", indexes={@ORM\Index(name="fk_job_projects1", columns={"id_project"})})
+ * @ORM\Entity
+ */
+class Job
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idjob", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idjob;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=100, nullable=false)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=45, nullable=false)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="jobcol", type="string", length=45, nullable=false)
+     */
+    private $jobcol;
+
+    /**
+     * @var \Application\Entity\Projects
+     *
+     * @ORM\ManyToOne(targetEntity="Application\Entity\Projects")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_project", referencedColumnName="idprojects")
+     * })
+     */
+    private $idProject;
+
+
+
+    /**
+     * Get idjob
+     *
+     * @return integer 
+     */
+    public function getIdjob()
+    {
+        return $this->idjob;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Job
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return Job
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set jobcol
+     *
+     * @param string $jobcol
+     * @return Job
+     */
+    public function setJobcol($jobcol)
+    {
+        $this->jobcol = $jobcol;
+
+        return $this;
+    }
+
+    /**
+     * Get jobcol
+     *
+     * @return string 
+     */
+    public function getJobcol()
+    {
+        return $this->jobcol;
+    }
+
+    /**
+     * Set idProject
+     *
+     * @param \Application\Entity\Projects $idProject
+     * @return Job
+     */
+    public function setIdProject(\Application\Entity\Projects $idProject = null)
+    {
+        $this->idProject = $idProject;
+
+        return $this;
+    }
+
+    /**
+     * Get idProject
+     *
+     * @return \Application\Entity\Projects 
+     */
+    public function getIdProject()
+    {
+        return $this->idProject;
+    }
+}

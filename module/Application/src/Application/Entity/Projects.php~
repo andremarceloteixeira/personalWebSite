@@ -1,0 +1,102 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Projects
+ *
+ * @ORM\Table(name="projects", uniqueConstraints={@ORM\UniqueConstraint(name="unique_id_project", columns={"id_project"})})
+ * @ORM\Entity
+ */
+class Projects
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_project", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idProject;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="end_date", type="string", length=255, nullable=false)
+     */
+    private $endDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=255, nullable=true)
+     */
+    private $image;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255, nullable=false)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="site", type="string", length=255, nullable=true)
+     */
+    private $site;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="start_date", type="string", length=255, nullable=false)
+     */
+    private $startDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=255, nullable=false)
+     */
+    private $type;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="video", type="string", length=255, nullable=true)
+     */
+    private $video;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="technologies", type="string", length=255, nullable=true)
+     */
+    private $technologies;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255, nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="jobsTitle", type="string", length=255, nullable=true)
+     */
+    private $jobstitle;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="company_id_company", type="integer", nullable=false)
+     */
+    private $companyIdCompany;
+
+
+}
