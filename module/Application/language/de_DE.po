@@ -1,153 +1,427 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ZendSkeletonApplication\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-05 23:45-0700\n"
-"PO-Revision-Date: 2012-07-06 08:18-0700\n"
-"Last-Translator: Evan Coury <me@evancoury.com>\n"
-"Language-Team: ZF Contributors <zf-devteam@zend.com>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: translate\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../view/layout/layout.phtml:6
-#: ../view/layout/layout.phtml:33
-msgid "Skeleton Application"
+msgid "menu.sobremim"
+msgstr "Über mich"
+
+msgid "menu.projectos"
+msgstr "Projekte"
+
+msgid "menu.tecnologias"
+msgstr "Technologien von.."
+
+msgid "menu.curriculo"
+msgstr "Lehrplan"
+
+msgid "menu.contactos"
+msgstr "Kontakte"
+
+msgid "footer.outiline"
+msgstr "2000 - %d by mteixeira Entwicklungen. -"
+
+msgid "footer.zf2"
+msgstr " Entwickelt Zend Framework 2"
+
+msgid "footer.message"
+msgstr "asdasda"
+
+msgid "mteixeira.title"
+msgstr "Mteixeira informatik Ingenieur"
+
+msgid "mteixeira.index.title"
+msgstr "Willkommen auf meiner neuen Website"
+
+msgid "mteixeira.index.escolar"
+msgstr "Mein Portfolio und Projekte"
+
+msgid "mteixeira.index.profisional"
+msgstr "Meine Ziele"
+
+msgid "mteixeira.index.freelancer"
+msgstr "Meine akademischen Reise"
+
+msgid "mteixeira.quemsou"
+msgstr "Aber wer bin ich .."
+
+msgid "mteixeira.profs"
+msgstr "Wer lehrt mich ... Wie lerne ich?"
+
+msgid "mteixeira.ad"
+msgstr "Studieren..."
+
+msgid "percurso.text.acdemico"
 msgstr ""
+"Zu wissen, meinen Lebenslauf, die die Unternehmen, wo ich habe, und Projekte"
+"Ich habe mitgewirkt. Und welche Technologien verwendet meine Ziele"
+"Zukunft, meine Ambitionen, und ich denke über meine Zukunft nach"
+"Web-Programmierer. Weil die PHP-Programmierung ... Weil für das Web, warum?"
 
-#: ../view/layout/layout.phtml:36
-msgid "Home"
-msgstr "Startseite"
+msgid "mteixeira.apst"
+msgstr ""
+"Hier können Sie Informationen über sie in meinem Lebenslauf finden in meinem"
+"Projekte, Berufsleben und mein Interesse an der Technologie."
 
-#: ../view/layout/layout.phtml:50
-msgid "All rights reserved."
-msgstr "Alle Rechte vorbehalten."
+msgid "mteixeira.tecs"
+msgstr ""
+"Was sind die Technologien, die Studie und hängen mit dem Auge platziert oben"
+"... Da die aktuelle Studie, die Vorteile und Nutzen"
+"Es wird die gleiche sein, die es wert ... sie studieren und lernen, sie ist, und mit der Entwicklung"
+"Auch die gleiche persönliche Ebene!"
 
-#: ../view/application/index/index.phtml:2
-#, php-format
-msgid "Welcome to %sZend Framework 2%s"
-msgstr "Willkommen zu dem %sZend Framework 2%s"
+msgid "mteixeira.acd"
+msgstr ""
+"Schauen Sie sich meine akademische percuso sehen, was Projekte und realizer"
+"Welche Technologien beschlagnahmt und vergleichen Sie mit diesem."
 
-#: ../view/application/index/index.phtml:3
-#, php-format
-msgid "Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2."
-msgstr "Herzlichen Glückwunsch! Sie haben die %sZF2 Skeleton Application%s erfolgreich installiert und benutzen gerade die Version %s des Zend Frameworks. Dieses Gerüst kann Ihnen als Einstiegspunkt, für Ihre weitere Entwicklung, basierend auf dem Zend Framework 2, dienen."
+msgid "mteixeira.quemsoueu"
+msgstr "Hallo, mein Name ist André Marcelo ..."
 
-#: ../view/application/index/index.phtml:4
-msgid "Fork Zend Framework 2 on GitHub"
-msgstr "Fork Zend Framework 2 auf GitHub"
+msgid "mteixeira.quemsoueu.text"
+msgstr ""
+"Ich bin 24 Jahre alt und ich bin ein Absolvent in Computer Engineering. Seit viel"
+"Ich hatte schon früh Interesse an Technik und Mechanik, durch Programmierung web"
+"java. narbeitet derzeit an %s Rocket Internet Portugal%s in Oporto. Die "
+"Rocket im vergangenen Jahr hat mich wachsen eine Menge ......"
 
-#: ../view/application/index/index.phtml:10
-msgid "Follow Development"
-msgstr "Folge der Entwicklung"
+msgid "mteixeira.noticiasdebasto"
+msgstr ""
+"%sJornal Noticias de Basto%s - Web Entwickler, Entwicklung site "
+"Offizielle"
 
-#: ../view/application/index/index.phtml:11
-#, php-format
-msgid "Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!"
-msgstr "Das Zend Framework 2 wird z.Z. aktiv weiterentwickelt.  Sollten Sie daran interessiert sein, die Entwicklung von ZF2 zu verfolgen, so bietet Ihnen die offizielle Webseite einen eigens für das Zend Framework 2 eingerichteten Bereich, auf der Sie Verlinkungen zum ZF2 %sWiki%s, %sEntwickler Blog%s, einem %sFehlerverfolgungssystem%s und noch vielem mehr finden. Dieser Bereich ist eine hervorragende Quelle um stets aktuell zu bleiben."
+msgid "mteixeira.netcelorico"
+msgstr ""
+"Praktikum in den Sommerferien und für Computer-Reparatur"
+"Website-Entwicklung"
 
-#: ../view/application/index/index.phtml:12
-msgid "ZF2 Development Portal"
-msgstr "ZF2 Entwickler Portal"
+msgid "mteixeira.free"
+msgstr "Web Developer, Start Freelancing"
 
-#: ../view/application/index/index.phtml:16
-msgid "Discover Modules"
-msgstr "Entdecken Sie Module"
+msgid "mteixeira.mobile"
+msgstr "Programmierer mobile Freelancing - ver %s android Play %s"
 
-#: ../view/application/index/index.phtml:17
-#, php-format
-msgid "The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2."
-msgstr "Die Community arbeitet momentan an einer Community Seite, welche als Galerie für ZF2 Module dient. Dieses Projekt ist %sauf GitHub%s verfügbar. Die Webseite ist bereits Online und enthält eine Liste mit schon veröffentlichten Modulen für das Zend Framework 2."
+msgid "mteixeira.esi"
+msgstr "Programmierer und Systemanalytiker in der ESI-BeS"
 
-#: ../view/application/index/index.phtml:18
-msgid "Explore ZF2 Modules"
-msgstr "Erkunden Sie ZF2 Module"
+msgid "mteixeira.rocket"
+msgstr ""
+"Regular, Advanced Programmer, Rocket Internet in Portugal (bisher)"
 
-#: ../view/application/index/index.phtml:22
-msgid "Help &amp; Support"
-msgstr "Hilfe &amp; Support"
+msgid "mteixeira.corgo"
+msgstr ""
+"Primary School - 1-4 Jahr - Primary School in Sao Romao Corgo - Braga"
 
-#: ../view/application/index/index.phtml:23
-#, php-format
-msgid "If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s."
-msgstr "Sollten Sie Hilfe jeglicher Art bei der Entwicklung mit dem Zend Framework 2 benötigen, kontaktieren Sie uns doch einfach über das IRC: %s#zftalk on Freenode%s. Wir freuen uns darauf, Ihnen bei Ihren Fragen zu helfen oder aber auch Ihre Meinung bezüglich der Beta Versionen zu hören. Alternativ können Sie auch die %smailing lists%s abonnieren und Ihre Fragen dort stellen."
+msgid "mteixeira.cbt"
+msgstr ""
+"Grundschule, 2 und 3 Zyklen 4-9 Jahre EB 2,3 / S Celoria von Basto -. Braga"
 
-#: ../view/application/index/index.phtml:24
-msgid "Ping us on IRC"
-msgstr "Schreiben Sie uns im IRC an"
+msgid "mteixeira.cbt.tec"
+msgstr ""
+"Technologische Computer-Kurs 9-12 Jahre EB 2,3 / S Celoria von Basto"
+"- Braga"
+msgid "mteixeira.redes"
+msgstr "FCUP - ENGINEERING Networking und Computing Systems"
 
-#: ../view/error/index.phtml:1
-msgid "An error occurred"
-msgstr "Ein Fehler ist aufgetreten"
+msgid "mteixeira.ipp"
+msgstr "IPP Polytechnic Institute of Porto-ESTGF - Computer Engineering"
 
-#: ../view/error/index.phtml:8
-msgid "Additional information"
-msgstr "Zusätzliche Information"
+msgid "mteixeira.ac.title"
+msgstr ""
+"Im Laufe meines Lebens, ich war ein guter Schüler, im folgenden"
+"Schulen."
+msgid "page.not.exists"
+msgstr "Die angeforderte Seite existiert nicht ..."
 
-#: ../view/error/index.phtml:11
-#: ../view/error/index.phtml:35
-msgid "File"
-msgstr "Datei"
+msgid "mteixeira.projects.title"
+msgstr ""
+"In diesem Bereich finden Sie alle Projekte, die ich getan habe und ich integriert."
 
-#: ../view/error/index.phtml:15
-#: ../view/error/index.phtml:39
-msgid "Message"
-msgstr "Meldung"
+msgid "mteixeira.projects.select"
+msgstr "Wählen Sie einen Bereich:"
 
-#: ../view/error/index.phtml:19
-#: ../view/error/index.phtml:43
-#: ../view/error/404.phtml:55
-msgid "Stack trace"
-msgstr "Stapelüberwachung"
+msgid "404.found"
+msgstr "Die gewünschte Seite ist nicht gültig"
 
-#: ../view/error/index.phtml:29
-msgid "Previous exceptions"
-msgstr "Vorherige Ausnahme"
+msgid "mteixeira.index.title.title"
+msgstr "M Teixeira - Computer-Ingenieur!"
 
-#: ../view/error/index.phtml:58
-msgid "No Exception available"
-msgstr "Es ist keine Ausnahme verfügbar"
+msgid "mteixeira.about.title"
+msgstr "Über mich .. :)"
 
-#: ../view/error/404.phtml:1
-msgid "A 404 error occurred"
-msgstr "Es trat ein 404 Fehler auf"
+msgid "projectos.profissionais"
+msgstr "Projekte Professionals"
 
-#: ../view/error/404.phtml:10
-msgid "The requested controller was unable to dispatch the request."
-msgstr "Der angeforderte Controller war nicht in der Lage die Anfrage zu verarbeiten."
+msgid "projectos.free"
+msgstr "Freiberuflich"
 
-#: ../view/error/404.phtml:13
-msgid "The requested controller could not be mapped to an existing controller class."
-msgstr "Der angeforderte Controller konnte keiner Controller Klasse zugeordnet werden."
+msgid "projectos.academicos"
+msgstr "Academic Projects"
 
-#: ../view/error/404.phtml:16
-msgid "The requested controller was not dispatchable."
-msgstr "Der angeforderte Controller ist nicht aufrufbar."
+msgid "menu.review"
+msgstr "Ich empfahl?"
 
-#: ../view/error/404.phtml:19
-msgid "The requested URL could not be matched by routing."
-msgstr "Für die angeforderte URL konnte keine Übereinstimmung gefunden werden."
+msgid "project.type.academic"
+msgstr "Academic Projects"
 
-#: ../view/error/404.phtml:22
-msgid "We cannot determine at this time why a 404 was generated."
-msgstr "Zu diesem Zeitpunkt ist es uns nicht möglich zu bestimmen, warum ein 404 Fehler aufgetreten ist."
+msgid "project.type.freelancer"
+msgstr "Freelancing..."
 
-#: ../view/error/404.phtml:34
-msgid "Controller"
-msgstr "Controller"
+msgid "project.type.profissional"
+msgstr "Beruflicher Werdegang"
 
-#: ../view/error/404.phtml:41
-#, php-format
-msgid "resolves to %s"
-msgstr "wird aufgelöst in %s"
 
-#: ../view/error/404.phtml:51
-msgid "Exception"
-msgstr "Ausnahme"
+msgid "project.company"
+msgstr "Unternehmen:"
 
+msgid "project.job"
+msgstr "Funktion durchgeführt:"
+
+msgid "project.startdate"
+msgstr "Startdatum des Projekts:"
+
+msgid "project.enddate"
+msgstr "Enddatum des Projekts:"
+
+msgid "project.desc"
+msgstr "Beschreibung und Ziele:"
+
+msgid "project.tec"
+msgstr "Verwendete Technologien:"
+
+msgid "project.site"
+msgstr "Besuchen Sie das Projekt:"
+
+msgid "kiomi.text.description"
+msgstr "KIOMI Online Shop | Zeitlose Fashion Favourites - Implementação de uma loja de roupa mais basica, atras da Zalando GmbH."
+
+msgid "emeza.text.description"
+msgstr "Este projecto teve como objectivo o desenvolvimento de 3 lojas online para a  Zalando GmbH , essas lojas foram Emeza.de, Emeza.ch e Emeza.com"
+
+msgid "mteixeira.index.text"
+msgstr"Ich habe einen Abschluss in Computer Engineering von der %s %s .Dieser Raum soll meine Arbeit und mein Profil zu fördern, ein Mittel des Kontaktes. Ich bin derzeit ein Web Engineering (Advanced Programmierer) in %s Rocket Internet Portugal%s befindet sich in Porto Seit März 2012. Ich bin ein Teil von einem Team von Programmierern, die Web-Anwendungen zu entwickeln für jedermann. Im Rahmen einiger Projekte manchmal durch Deutschland verbracht. In der Vergangenheit in einem Projekt in Lissabon eingefügt%sGlintt%s Outsourcing in der %sESI Banco Espirito Santo%s während dieser vier Monate und erhöht meine erste berufliche Erfahrung und Teamarbeit. Dort war ich Teil eines Teams der Systemintegration ist von November 2011 bis Februar 2012. Vor und während meiner akademischen Reise spielte Rollen Freiberufler. "
+
+msgid "fab.index.text"
+msgstr "Online Shopping Store - Buy Furniture Online, Home Decor, Furnishing and Kitchenware from FabFurnish. Enjoy All India Free Shipping, Cash on delivery"
+
+msgid "office.text.description"
+msgstr "OfficeYes is India's #1 supplier of Office Stationery and Office Supplies online such as Office Furniture, Corporate Gifts, Ink Cartridges, Computers and more"
+
+msgid "bes.text.description"
+msgstr "Während dieser Zeit spielte Rollen in ESI Analyst Programmer - BES. War verantwortlich für den Aufbau von verschiedenen Web-Services mit TIBCO mit anderen Anwendungen, insbesondere Java und COBOL zu integrieren, damit dies geschehen kann, jeder hatte zu zeichnen und zu studieren alle notwendigen Anforderungen und entwickeln den Dienst auf Regeln."
+
+msgid "projects.academic.message"
+msgstr "In diesem Raum finden Sie alle meine akademische Projekte. Sehen Sie, was Projekte im Rahmen meiner meinen Abschluss in Computer Engineering realisiert"
+
+
+msgid "projects.freelancer.message"
+msgstr "Vorhanden sind für alle Unternehmen, die zusammengearbeitet haben ..."
+
+msgid "projects.profissional.message"
+msgstr "In diesem Raum soll zeigen, welche Projekte und beteiligte ich integriert Entwicklungsteams."
+
+msgid "free.srx.text"
+msgstr "Die Entwicklung einer Android-Anwendung für die Verwaltung von Netzwerk Zeitpläne Rodonorte"
+
+msgid "free.cos.text"
+msgstr "Anwendung für die Verwaltung von Kosmetika"
+
+msgid "free.vendas.text"
+msgstr "Die Entwicklung einer Android-Anwendung für die Verwaltung von Vertriebs-Routen"
+
+msgid "free.tictac.text"
+msgstr "Entwicklung von einem einfachen Spiel"
+
+msgid "widget.tictac.text"
+msgstr "Meine erste Widget"
+
+msgid "sani.text"
+msgstr "Online Shop für Sanitärprodukte"
+
+msgid "tay.text"
+msgstr "Online Shop für exotische Vögel"
+
+msgid "quintadabouca.text"
+msgstr "Online Shop für biologische Produkte"
+
+msgid "andremarcelo.text"
+msgstr "Seite Offenlegung von Unternehmensinformationen"
+
+msgid "riwd.text"
+msgstr "Website des Unternehmens Offenlegung"
+
+msgid "cc.text"
+msgstr "Postzeitung Website Celorico"
+
+msgid "futsal.text"
+msgstr "Legierung"
+
+msgid "fer.text"
+msgstr "Gebäude"
+
+msgid "corgo.text"
+msgstr "Website der Pfarrei Corgo"
+
+msgid "radabike.text"
+msgstr "Website eines Waren lagern Fahrrad"
+
+msgid "celconta.text"
+msgstr "Website von einer Wirtschaftsprüfungsgesellschaft"
+
+msgid "gentil.text"
+msgstr "Website von einer Versicherung"
+
+msgid "sa.text"
+msgstr "Firmenlogo Sanilixa"
+
+msgid "silva.text"
+msgstr "Website des Fotografen ..."
+
+msgid "nb.text"
+msgstr "Site news journal des mythischen basto"
+
+msgid "mb.text"
+msgstr "Site-engine company basto"
+
+msgid "tap.text"
+msgstr "Endgültiger Entwurf des Abschluss in Informatik Engineering"
+
+msgid "redes.text"
+msgstr "Entwicklung eines Netzwerks, in dem sie alle Kommunikationsprotokolle gelernt wird."
+
+msgid "pm.text"
+msgstr "Management von IT-Projekten"
+
+msgid "sqt.text"
+msgstr "Website des Seminars SQT"
+
+msgid "pei.text"
+msgstr "Projekt im Rahmen der Disziplin PEI entwickelt"
+
+msgid "si.text"
+msgstr "Informationssystem für die internationalen Beziehungen der gabinet entwickelt"
+
+msgid "sql.text"
+msgstr "Database für eine Schule des Fahrens entwickelt"
+
+msgid "cmu2.text"
+msgstr "Manager der Vertriebswege für Android entwickelt"
+
+msgid "cmu1.text"
+msgstr "Manager der Vertriebswege für Windows Mobile entwickelt"
+
+msgid "ju.text"
+msgstr "Einheitliche Tests in Junit"
+
+msgid "jtt.text"
+msgstr "Anwendung in Java SE entwickelt"
+
+
+msgid "jase.text"
+msgstr "Chinese Postman Problem"
+
+msgid "c.text"
+msgstr "Spiel Open Gl"
+
+msgid "ewqqw.text"
+msgstr "Arbeit Interaktion und Multimedia-Systeme"
+
+msgid "asass.text"
+msgstr "Website für inscrisao Prüfungen"
+
+msgid "ass.text"
+msgstr "Maquina de cafe em assembly"
+
+msgid "eb.text"
+msgstr "Roboter, die Abfälle Anwendung in Simbad entwickelt sammeln"
+
+msgid "bfb.text"
+msgstr "Ein Simulator in Java-Stack"
+
+msgid "ns.text"
+msgstr "Metro-Netzwerke in Java mit Graphen"
+
+msgid "sp.text"
+msgstr "Rechtschreibprüfung in java"
+
+msgid "ev.text"
+msgstr "Bewertung Grids in Java"
+
+msgid "jb.text"
+msgstr "Java Web Browser"
+
+msgid "s.text"
+msgstr "Warenkörbe in C"
+
+msgid "gs.text"
+msgstr "Website zur Disziplin"
+
+msgid "sl.text"
+msgstr "Solitario Spiel in C"
+
+msgid "tecnologias.interess"
+msgstr "Meine Schwerpunkte interes"
+
+msgid "tecnologias.text"
+msgstr "In diesem Raum anwesend sind meine Interessengebiete und Erfahrungen, die Technologien haben."
+
+msgid "curriculo.text.desc"
+msgstr "In diesem Raum können Sie meinen Lebenslauf im Word-Format und PDF-Ansicht."
+
+msgid "curriculo.title"
+msgstr "Curriculum vitae"
+
+msgid "file.word"
+msgstr "Meinen Lebenslauf in Microsoft Word-Format"
+
+msgid "file.pdf"
+msgstr "Mein Lebenslauf im PDF-Format"
+
+msgid "tecs.name"
+msgstr "Niveau"
+
+msgid "contacts.title"
+msgstr "Kontakte"
+
+msgid "contacts.text"
+msgstr "Hier finden Sie alle meine persönlichen Kontakte..."
+
+msgid "recomendame.text"
+msgstr "Hinterlassen Sie Ihre Meinung hier ab, welche!"
+
+msgid "recomendame.title"
+msgstr "Empfohlene mich als Profi?"
+
+msgid "review.message"
+msgstr "Schreiben Sie eine Rezension*"
+
+msgid "contact.form.submit"
+msgstr "Einreichen"
+
+msgid "contact.name"
+msgstr "Geben Sie Ihren Namen"
+
+msgid "ct.name"
+msgstr "Wie ist dein Name?"
+
+msgid "ultimos.comments"
+msgstr "Neueste Kommentare"
+
+msgid "ct.message"
+msgstr "Was ist die Botschaft, die ich vermitteln wollen?"
+
+msgid "tecs.level"
+msgstr "Jahrelange Erfahrung"
+
+msgid "legend.level"
+msgstr "Hinweis: Level 1 - Junior, 2 - Intermediate, 3 - Independent, 4 - Specialist"
+
+msgid "actualmente.tecs"
+msgstr "Derzeit gehen begeistert: JavaServer Faces Technologie, Spring, Struts, Hibernate, Google Web Toolkit, Django, rubyonrails"

@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2005-2013 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-
+use Application\Document\DocumentManagerAwareInterface;
 return array(
     'router' => array(
         'routes' => array(
@@ -17,6 +17,69 @@ return array(
                     'defaults' => array(
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'index',
+                    ),
+                ),
+            ),
+             'about' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/about',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'about',
+                    ),
+                ),
+            ),
+            'projects' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route' => '/projects/:type[/]',
+                    'constraints' => array(
+                        'type' => 'profissional|freelancer|academic',
+                    ),
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Projects',
+                        'action' => 'projects',
+                    ),
+                ),
+            ),
+            'technologies' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/technologies',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Technologies',
+                        'action'     => 'technologies',
+                    ),
+                ),
+            ),
+             'cv' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/cv',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'cv',
+                    ),
+                ),
+            ),
+             'review' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/review',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'review',
+                    ),
+                ),
+            ),
+             'contacts' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/contacts',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'contacts',
                     ),
                 ),
             ),
@@ -56,13 +119,13 @@ return array(
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
+    ),
+    'translator' => array(
         ),
         'aliases' => array(
             'translator' => 'MvcTranslator',
         ),
-    ),
-    'translator' => array(
-        'locale' => 'en_US',
+        'locale' => 'pt_BR',
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
@@ -73,7 +136,10 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Projects' => 'Application\Controller\ProjectsController',
+            'Application\Controller\Technologies' => 'Application\Controller\TechnologiesController',
+            'Application\Controller\Core' => 'Application\Controller\CoreController'
         ),
     ),
     'view_manager' => array(
@@ -92,11 +158,46 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
+     'view_helpers' => array(
+                'factories' => array(
+                        't' => function  ($sm)
+                        {
+                            $translateHelper = new \Application\Helper\TranslateHelper();
+                            return $translateHelper;
+                        },
+                        'page' => function  ($sm)
+                        {
+                            $locator = $sm->getServiceLocator();
+                            $pageHelper = new \Application\Helper\PageHelper($locator);
+                            return $pageHelper;
+                        },
+                )
+        ),
+    
     // Placeholder for console routes
     'console' => array(
         'router' => array(
             'routes' => array(
             ),
         ),
+    ),                           
+    'doctrine' => array(
+        'driver' => array(
+            'application_entities' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array(__DIR__ . '/../src/Application/Entity')
+            ),
+            'orm_default' => array(
+                'drivers' => array(
+                    'Application\Entity' => 'application_entities'
+                )
+            )
+        )
+    ),
+   'session' => array(
+        'remember_me_seconds' => 2419200,
+        'use_cookies' => true,
+        'cookie_httponly' => true,
     ),
 );

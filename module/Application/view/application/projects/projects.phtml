@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12" role="main">
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <h1 id="history"><?php echo ucfirst($this->t('project.type.' . $this->type)); ?></h1>
+            </div>
+            <p class="lead"><?php echo $this->t('projects.' . $this->type . '.message') ?></p>
+        </div>
+    </div>
+</div>
+<?php
+foreach ($this->projects as $project) :
+    $url = $this->page()->getUrl('image', $project->getImage());
+    $comp = null;
+    foreach ($this->companys as $company) {
+         if($company->getIdCompany() == $project->getCompanyIdCompany()) {
+             $comp = $company;
+         }
+    }
+    echo $this->partial('application/projects/partial/project', array('project' =>
+        $project, 'url' => $url, 'company' => $comp));
+endforeach;
+?>

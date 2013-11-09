@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-12" role="main">
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <h1 id="tecs"><?php echo ucfirst($this->t('curriculo.title')); ?></h1>
+            </div>
+            <p class="lead"><?php echo $this->t('curriculo.text.desc'); ?></p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <span class="glyphicon glyphicon-import">
+                 <a href="<?php echo $this->page()->getUrl('document', 'cv-mteixeira.pdf');?>" target="_blank">
+                    <?php echo $this->t('file.pdf'); ?>
+                </a>
+            </span><br/><br/>
+            <span class="glyphicon glyphicon-floppy-disk">
+                <a href="<?php echo $this->page()->getUrl('document', 'cv-mteixeira.doc');?>" target="_blank">
+                    <?php echo $this->t('file.word'); ?>
+                </a>
+            </span>
+        </div>
+    </div>
+</div>

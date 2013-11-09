@@ -1,0 +1,47 @@
+.project:hover {
+    background:#fff; width:100%;
+    display:block; text-decoration:none;
+}
+
+.project {
+    
+}
+.line-project {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.project-img {
+    width: 450px;
+    height: 243px;
+}
+
+.bs-project {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+    width: 1140px;
+}
+.bs-project  {
+    position: relative;
+    padding: 3px 15px 15px;
+    margin: 0 16px 15px;
+    background-color: #fafafa;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+    border-color: #e5e5e5 #eee #eee;
+    border-width: 1px 0;
+}
+
+.bs-project ul {
+  list-style-type: none;
+}

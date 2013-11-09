@@ -1,0 +1,71 @@
+<?php 
+$isRocket = false;
+$sites = $this->project->getSite();
+if (!is_null($sites)) {
+    $sites = $this->project->getSite();
+    $sites = explode(',', $sites);
+    if (!is_null($this->company)) {
+        $isRocket = \Application\Helper\PageHelper::ROCKET_INTERNET_ACRONYM ==
+                    $this->company->getAcronym();
+    }
+}
+?>
+<div class="row">
+    <div class="col-md-11 bs-project">
+        <h4 class="bold"><?php echo $this->t($project->getName()); ?></h4>
+        <hr class="line-project"/>
+        <div class="col-md-5" >
+            <img class="zoom project-img" src="<?php echo $url; ?>" data-zoom-image="<?php echo $url; ?>" alt="<?php echo $this->t($project->getName()); ?>"/>
+        </div>
+        <div class="col-md-7" >
+            <ul>
+                <?php if(!is_null($this->company)):?>
+                    <li>
+                        <span class="bold"><?php echo $this->t('project.company'); ?></span>
+                        <a href="<?php echo $this->company->getSiteUrl(); ?>" target="_blank"><?php echo $this->company->getName(); ?></a>
+                    </li>
+                <?php endif;?>
+                <li>
+                    <span class="bold"><?php echo $this->t('project.job'); ?></span>
+                    <?php echo $this->project->getJobstitle(); ?>
+                </li>
+                <?php if(!$isRocket) :?>
+                    <li>
+                        <span class="bold"><?php echo $this->t('project.startdate'); ?></span>
+                        <?php echo $this->project->getStartDate(); ?>
+                    </li>
+                    <li>
+                        <span class="bold"><?php echo $this->t('project.enddate'); ?></span>
+                        <?php echo $this->project->getEndDate(); ?>
+                    </li>
+                    <li>
+                        <span class="bold"><?php echo $this->t('project.desc'); ?></span>
+                        <?php echo $this->t($this->project->getDescription()); ?>
+                    </li>
+                    <li>
+                        <span class="bold"><?php echo $this->t('project.tec'); ?></span>
+                        <?php echo $this->project->getTechnologies(); ?>
+                    </li>
+                <?php endif;?>
+                <?php if (!is_null($this->project->getSite())):?>
+                <li>
+                    <span class="bold"><?php echo $this->t('project.site'); ?></span>
+                    <?php if (count($sites) > 0): ?>
+                        <ul>
+                            <?php foreach ($sites as $site) : ?>
+                                <li class="topl-80"><a href="<?php echo $site ?>" target="_blank"><?php echo $site; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php else : ?>
+                            <a href="<?php echo $this->project->getSite(); ?>" target="_blank"><?php echo $this->project->getSite(); ?></a>
+                            <?php
+                        endif;
+                    endif;
+                    ?>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

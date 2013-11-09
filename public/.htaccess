@@ -14,3 +14,9 @@ RewriteRule ^.*$ - [NC,L]
 RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
 RewriteRule ^(.*) - [E=BASE:%1]
 RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]
+# htaccess custom error pages
+ErrorDocument 400 /404
+ErrorDocument 401 /404
+ErrorDocument 403 /404
+ErrorDocument 404 /404
+ErrorDocument 500 /404

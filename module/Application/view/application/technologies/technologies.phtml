@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-12" role="main">
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <h1 id="tecs"><?php echo ucfirst($this->t('tecnologias.interess')); ?></h1>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <?php echo $this->t('tecnologias.text'); ?>
+        </div>
+    </div>
+    <div class="alert alert-success"><p><?php echo $this->t('actualmente.tecs');?></p></div>
+    <div class="alert alert-info"><?php echo $this->t('legend.level') ?></div>
+    <?php foreach ($this->tecs  as $key => $tec) :?>
+          <?php echo $this->partial('application/technologies/partial/tecs', array('title' =>$key, 'tec' => $tec));?>
+    <?php endforeach;?>
+</div>

@@ -1,0 +1,54 @@
+<?php
+$this->title = "About me - ";
+$this->headTitle($this->title);
+?> 
+<div class="wrap block-3 pad-2">
+    <div>
+        <h3 class="p5"><?php echo $this->t('mteixeira.quemsou');?></h3>
+        <img src="<?php echo ($this->basePath() . '/img/me.JPG'); ?>" alt="" class="img-border" width="278px" height="300px">
+        <p class="top-1"><a href="#" class="link"><strong><?php echo $this->t('mteixeira.quemsoueu')?></strong></a></p>
+        <p class="p6"><?php echo $this->t('mteixeira.quemsoueu.text',
+                array('<a href="http://rocket-internet.pt" target="_blank">', '</a>'));?></p>
+    </div>
+    <div>
+        <h3 class="p6"><?php echo $this->t('mteixeira.profs');?></h3>
+        <div class="box-1">
+            <span>2006 - </span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.noticiasdebasto', array('<a href="http://noticiasdebasto.com/">', '</a>'));?></p>
+        </div>
+        <div class="box-1">
+            <span>2008 - </span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.netcelorico');?></p>
+        </div>
+        <div class="box-1">
+            <span>2006 -</span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.free');?></p>
+        </div>
+        <div class="box-1 p4">
+            <span>2010 -</span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.mobile', 
+                        array('<a href="https://play.google.com/store/apps/developer?id=andre%20marcelo&hl=en" 
+                                target="_blank">', '</a>'));?></p>
+        </div>
+        <div class="box-1 p4">
+            <span>2011 -</span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.esi');?></p>
+        </div>
+        <div class="box-1 p4">
+            <span>2012 -</span>
+            <p class="extra-wrap"><?php echo $this->t('mteixeira.rocket');?></p>
+        </div>
+        <a href="http://pt.linkedin.com/pub/andr%C3%A9-marcelo-ferreira-teixeira/41/342/523/" target="_blank" class="button">More in linkedin</a>
+    </div>
+    <div class="last">
+        <h3 class="p6"><?php echo $this->t('mteixeira.ad');?></h3> 
+        <p><?php echo $this->t('mteixeira.ac.title');?></p>
+        <ul class="list-1 p4 left-1">
+            <li><a><?php echo $this->t('mteixeira.corgo');?></a></li>
+            <li><a><?php echo $this->t('mteixeira.cbt');?></a></li>
+            <li><a><?php echo $this->t('mteixeira.cbt.tec');?></a></li>
+            <li><a><?php echo $this->t('mteixeira.redes');?></a></li>
+            <li><a><?php echo $this->t('mteixeira.ipp');?></a></li>
+        </ul>
+    </div>
+</div>

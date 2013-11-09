@@ -1,0 +1,53 @@
+<?php
+$serviceLocator = $this->getHelperPluginManager()->getServiceLocator();
+$action = $serviceLocator->get('request')->getRequestUri();
+$projectsUrlAcademic = $this->url('projects', array('controller' => 'projects',
+                'action' => 'projects',
+                'type' => \Application\Model\Projects::TYPE_ACADEMIC));
+
+$projectsUrlFree = $this->url('projects', array('controller' => 'projects',
+                'action' => 'projects',
+                'type' => \Application\Model\Projects::TYPE_FREE));
+
+$projectsUrlProf = $this->url('projects', array('controller' => 'projects',
+                'action' => 'projects',
+                'type' => \Application\Model\Projects::TYPE_PROF));
+$countries = $this->page()->getCountries();
+?>
+
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><?php echo $this->t('mteixeira.title') ?></a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="<?php echo strpos($action, 'about') ? 'active' : '' ?>"><a href="<?php echo $this->url('about') ?>"><?php echo $this->t('menu.sobremim') ?></a></li>
+                <!--<li class="<?php //echo strpos($action, 'projects') ? 'active' : '' ?>"><a href="<?php //echo $this->url('projects') ?>"><?php //echo $this->t('menu.projectos') ?></a></li> -->
+                 <li class="dropdown <?php echo strpos($action, 'projects') ? 'active' : '' ?>">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->t('menu.projectos') ?> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo $projectsUrlProf;?>"><?php echo $this->t('projectos.profissionais');?></a></li>
+                        <li class="divider"></li>
+                        <li><a href="<?php echo $projectsUrlFree;?>"><?php echo $this->t('projectos.free');?></a></li>
+                        <li class="divider"></li>
+                        <li><a href="<?php echo $projectsUrlAcademic;?>"><?php echo $this->t('projectos.academicos');?></a></li>
+                    </ul>
+                </li>
+                <li class="<?php echo strpos($action, 'technologies') ? 'active' : '' ?>"><a href="<?php echo $this->url('technologies') ?>"><?php echo $this->t('menu.tecnologias') ?></a></li>
+                <li class="<?php echo strpos($action, 'cv') ? 'active' : '' ?>"><a href="<?php echo $this->url('cv') ?>"><?php echo $this->t('menu.curriculo') ?></a></li>
+                <li class="<?php echo strpos($action, 'review') ? 'active' : '' ?>"><a href="<?php echo $this->url('review') ?>"><?php echo $this->translate('menu.review') ?></a></li>
+                <li class="<?php echo strpos($action, 'contacts') ? 'active' : '' ?>"><a href="<?php echo $this->url('contacts') ?>"><?php echo $this->t('menu.contactos') ?></a></li>
+            </ul>
+            <ul class="languages">
+                <li><a href="<?php echo $this->basePath().'?country='.$countries[0];?>"><img src="<?php echo ($this->basePath() . '/img/LANG1.png'); ?>" alt="Portugal"></a></li>
+                <li><a href="<?php echo $this->basePath().'?country='.$countries[1];?>"><img src="<?php echo ($this->basePath() . '/img/LANG2.png'); ?>" alt="English"></a></li>
+                <li><a href="<?php echo $this->basePath().'?country='.$countries[2];?>"><img src="<?php echo ($this->basePath() . '/img/LANG3.png'); ?>" alt="Deutsch"></a></li>
+            </ul>
+    </nav>
+  </div>
