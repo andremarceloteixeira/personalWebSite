@@ -17,6 +17,7 @@ class Translate
 
     public static function setLocale ($locale = "pt_BR")
     {
+       
         self::$translateService->setLocale($locale);
     }
 

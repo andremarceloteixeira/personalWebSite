@@ -50,6 +50,7 @@ class Module
         }
         $local = $container->offsetGet('country');
         Translate::setTranslate($translator);
+
         Translate::setLocale($configModel->getFileLangName($local));
         Translate::setTranslatePath();
     }
